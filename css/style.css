@@ -4,6 +4,7 @@
   src: url(../assets/amsterdam-four-ttf-maisfontes.100e/amsterdam-four-ttf.ttf);
 }
 
+/* Define the needed styles */
 :root {
   --primary-color: #dfccc5;
   --secondary-color: #f4eee1;
@@ -12,6 +13,7 @@
   --font-style-one: "Amsterdam";
   --font-style-two: "Catamaran", sans-serif;
   --font-style-three: "Open Sans", sans-serif;
+  --font-style-four: "Cormorant", serif;
 }
 
 html {
@@ -71,10 +73,16 @@ header {
   font-size: 2rem;
 }
 
+.nav .fa:hover {
+  color: #9980765c;
+}
+
 .nav ul a {
   text-decoration: none;
   color: black;
 }
+
+/* Main Section*/
 
 main {
   position: relative;
@@ -84,17 +92,47 @@ main {
   background-repeat: none;
   background-position: center;
   background-size: cover;
+  font-family: var(--font-style-four);
+  display: flex;
+  align-items: center;
 }
 
 main::after {
   content: "";
   position: absolute;
-  inset: 0;
   background-color: rgba(216, 176, 139, 0.427);
+  z-index: 1;
+  inset: 0;
+}
+
+.main-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  color: white;
+  font-size: 4.3rem;
+  text-align: center;
+}
+
+.main-content h1 {
+  max-width: 40%;
+}
+
+.image-holder {
+  height: 8em;
+}
+
+img {
+  border-radius: 10%;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }
