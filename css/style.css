@@ -16,10 +16,6 @@
   --font-style-four: "Cormorant", serif;
 }
 
-html {
-  font-size: 1vw;
-}
-
 * {
   margin: 0;
   padding: 0;
