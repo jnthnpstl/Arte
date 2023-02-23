@@ -82,6 +82,63 @@ header {
   color: black;
 }
 
+.hamburger{
+  display: none;
+}
+
+@media only screen and (max-width: 1320px){
+  header{
+      padding: 0 3.125rem;
+  }
+}
+@media only screen and (max-width: 1100px){
+  header{
+      padding: 0 1.875rem;
+  }
+}
+@media only screen and (max-width: 900px){
+  .hamburger{
+      display: block;
+      cursor: pointer;
+ }
+  .hamburger .line{
+      width: 2rem;
+      height: 0.188rem;
+      background: BLACK;
+      margin: 0.375rem 0 ;
+ }
+  .nav{
+      height: 0;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: var(--secondary-color);
+      transition: 0.2s;
+      overflow: hidden;
+ }
+  .nav .active{
+      position: absolute;
+      height: 28.125rem;
+ }
+  .nav ul{
+      display: block;
+      width: fit-content;
+      margin: 5rem auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+ }
+  .nav.active ul{
+      opacity: 1;
+ }
+  .nav ul a{
+      margin-bottom: 0.8rem;
+ }
+}
+
+
 /* Main Section*/
 
 main {
@@ -97,13 +154,13 @@ main {
   align-items: center;
 }
 
-main::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(216, 176, 139, 0.427);
-  z-index: 1;
-  inset: 0;
-}
+  main::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(216, 176, 139, 0.427);
+    z-index: 1;
+    inset: 0;
+  }
 
 .main-content {
   display: flex;
@@ -131,6 +188,12 @@ img {
   width: 100%;
 }
 
+@media only screen and (max-width: 900px){
+  .main-content{
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 @media screen and (max-width: 480px) {
   html {
     font-size: 2vw;
