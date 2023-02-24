@@ -48,6 +48,10 @@ img {
   margin: auto;
 }
 
+section:not(:first-child) {
+  margin: 150px 0;
+}
+
 .brand-name {
   position: relative;
   margin: 0 0 0 44px;
@@ -168,53 +172,64 @@ main {
   font-size: 63px;
   font-family: var(--font-style-four);
   font-weight: 200;
+  margin: 50px;
 }
 
 .products .items {
   display: grid;
+  justify-items: center;
+
   grid-template-columns: repeat(4, 1fr);
 }
 
-.products .product-item {
-  /* margin: 75px 15px; */
+.item {
   width: 185px;
   height: 300px;
-  /* border: 1px solid black; */
 }
 
-.products .product-item:nth-child(even) {
+.products .item:nth-child(even) {
   margin-top: 50px;
-  /* width: 185px;
-  height: 300px;
-  border: 1px solid black; */
 }
 
-.products .image {
+.item .image {
   border: 1px solid black;
   border-radius: 120px 120px 0 0;
   width: 100%;
   height: 75%;
 }
 
-.products img {
+.item img {
   border-radius: 120px 120px 0 0;
 }
 
-.products .text {
+.item .text {
   width: 100%;
   height: 25%;
   background-color: var(--primary-color);
-}
-
-.products .product-item .one {
-  align-self: start;
-  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*SERVICES SECTION*/
 
+.services .items {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .services h2 {
+  margin: 50px;
+
   font-size: 63px;
   font-family: var(--font-style-four);
   font-weight: 200;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: var(--highlight-color);
 }
