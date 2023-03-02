@@ -27,6 +27,7 @@ body {
 }
 
 header {
+  top: 0;
   position: fixed;
   display: flex;
   width: 100%;
@@ -36,6 +37,10 @@ header {
   z-index: 99;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+/* .shrink {
+  font-size: 24px;
+} */
 
 img {
   object-fit: cover;
@@ -55,6 +60,10 @@ section:not(:first-child) {
 .brand-name {
   position: relative;
   margin: 0 0 0 44px;
+}
+
+.brand-name span {
+  transition: all 0.2s ease-in;
 }
 
 .brand-name span:nth-child(1) {
@@ -101,135 +110,6 @@ section:not(:first-child) {
   color: black;
 }
 
-/* Main Section*/
-
 main {
   margin: auto;
-}
-
-.main-content::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(216, 176, 139, 0.427);
-  z-index: 1;
-  inset: 0;
-}
-
-.main-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-image: url(../assets/images/Beige\ and\ brown\ A4\ papers\ as\ office\ stationery\ flatlay\,\ luxury\ b.jfif);
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
-  font-family: var(--font-style-four);
-  height: 100%;
-}
-
-.main-content .container {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 2;
-  color: white;
-  font-size: 48px;
-  text-align: center;
-}
-
-.main-content h1 {
-  max-width: 50%;
-}
-
-.main-content .image-holder {
-  position: relative;
-  margin: 200px 0;
-  height: 8em;
-
-  border-radius: 10%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
-
-.main-content img {
-  border-radius: 10%;
-}
-
-/* @media screen and (max-width: 480px) {
-  html {
-    font-size: 2vw;
-  }
-} */
-
-/*Product Section*/
-
-.products {
-  position: relative;
-}
-
-.products h2 {
-  font-size: 63px;
-  font-family: var(--font-style-four);
-  font-weight: 200;
-  margin: 50px;
-}
-
-.products .items {
-  display: grid;
-  justify-items: center;
-
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.item {
-  width: 185px;
-  height: 300px;
-}
-
-.products .item:nth-child(even) {
-  margin-top: 50px;
-}
-
-.item .image {
-  border: 1px solid black;
-  border-radius: 120px 120px 0 0;
-  width: 100%;
-  height: 75%;
-}
-
-.item img {
-  border-radius: 120px 120px 0 0;
-}
-
-.item .text {
-  width: 100%;
-  height: 25%;
-  background-color: var(--primary-color);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*SERVICES SECTION*/
-
-.services .items {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.services h2 {
-  margin: 50px;
-
-  font-size: 63px;
-  font-family: var(--font-style-four);
-  font-weight: 200;
-}
-
-footer {
-  width: 100%;
-  height: 300px;
-  background-color: var(--highlight-color);
 }
