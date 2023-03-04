@@ -64,9 +64,9 @@
 
 .products .items {
   display: grid;
-  justify-items: center;
-
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap: 90px;
+  grid-template-columns: repeat(auto-fit, minmax(185px, max-content));
 }
 
 .item {
