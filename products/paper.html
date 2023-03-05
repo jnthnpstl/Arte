@@ -41,18 +41,67 @@
     <section class="paper">
       <div class="container">
         <div class="outer-paper-products">
-          <p>Product > Paper </p>
+          <ul>
+            <a href="../index.html#products">
+
+              <li>Products</li>
+            </a>
+            <span>❯</span>
+            <li onclick="returnToPaper()">Paper</li>
+          </ul>
           <div class="inner-outer-products">
-            <div class="item"></div>
+            <div class="item">
+              <div class="item-wrapper">
+                <div class="item-image">
+                  <img src="../assets/images/HANDMADE COTTON RAG DECKLE EDGE PAPER _ HEMP PAPER _ RECYCLED PAPER.png">
 
+                </div>
+                <div class="item-detail">
+                  <p></p>
+                  <p></p>
+                  <p>Each pack contains <b>6</b> pieces.</p>
+
+                  <table>
+                    <tr>
+                      <th>Sizes</th>
+                      <th>Stock</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr>
+                      <th>A6</th>
+                      <th>10</th>
+                      <th>50</th>
+                    </tr>
+                    <tr>
+                      <th>A5</th>
+                      <th>10</th>
+                      <th>60</th>
+                    </tr>
+                    <tr>
+                      <th>A4</th>
+                      <th>12</th>
+                      <th>70</th>
+                    </tr>
+                  </table>
+                  <div>
+                    <div class="rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="paper-products">
-              <div class="product">
+              <div class="product" onclick="fadeOut(this)">
                 <div class="image-holder">
-                  <a href="./item.html">
+                  <img src="../assets/images/HANDMADE COTTON RAG DECKLE EDGE PAPER _ HEMP PAPER _ RECYCLED PAPER.png"
+                    alt="">
 
-                    <img src="../assets/images/HANDMADE COTTON RAG DECKLE EDGE PAPER _ HEMP PAPER _ RECYCLED PAPER.png"
-                      alt="">
-                  </a>
                 </div>
                 <p id="PRP">Plain Recycled Paper</p>
                 <p>Php 50-70</p>
@@ -60,7 +109,7 @@
                   <a><i class="fa fa-heart" aria-hidden="true"></i></a>
                 </span>
               </div>
-              <div class="product">
+              <div class="product" onclick="fadeOut(this)">
                 <div class="image-holder">
                   <img src="../assets/images/Born In Paper - Copy.png" alt="">
                 </div>
@@ -70,7 +119,7 @@
                   <a><i class="fa fa-heart" aria-hidden="true"></i></a>
                 </span>
               </div>
-              <div class="product">
+              <div class="product" onclick="fadeOut(this)">
                 <div class="image-holder">
                   <img src="../assets/images/Awagami Factory - Japanese WASHI PAPER Online Shop - Copy.png" alt="">
                 </div>
@@ -80,18 +129,6 @@
                   <a><i class="fa fa-heart" aria-hidden="true"></i></a>
                 </span>
               </div>
-
-              <div class="product">
-                <div class="image-holder">
-                  <img src="../assets/images/Awagami Factory - Japanese WASHI PAPER Online Shop - Copy.png" alt="">
-                </div>
-                <p id="PRP">Colored Recycled Paper</p>
-                <p>Php 60-80</p>
-                <span class="favorite">
-                  <a><i class="fa fa-heart" aria-hidden="true"></i></a>
-                </span>
-              </div>
-
             </div>
           </div>
         </div>
@@ -99,6 +136,7 @@
       </div>
     </section>
   </main>
+  <footer></footer>
   <script src="../js/animation.js"></script>
 
   <!-- <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script> -->
