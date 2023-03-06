@@ -124,7 +124,7 @@ i{
 }
 .signs-1 a{
   text-decoration: none;
-  color: black; font-family: var(--font-style-three);
+  color: black; font-family: var(--font-style-four);
   font-weight: bold;
 }
 .signs-1 .fa{
@@ -145,7 +145,7 @@ i{
 .signs-2 a{
   text-decoration: none;
   color: black;
-  font-family: var(--font-style-three);
+  font-family: var(--font-style-four);
   font-weight: bold;
 }
 
