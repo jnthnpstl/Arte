@@ -34,7 +34,7 @@ header {
   justify-content: space-between;
   background-color: var(--secondary-color);
   align-items: center;
-  z-index: 99;
+  z-index: 5;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
