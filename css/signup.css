@@ -136,3 +136,7 @@ i{
   font-family: var(--font-style-four);
   font-weight: bold;
 }
+
+.s:hover{
+  color: beige;
+}
